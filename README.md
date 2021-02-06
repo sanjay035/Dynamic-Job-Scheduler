@@ -38,7 +38,7 @@ It is an API based job scheduler(with cron-expressions) where we can create, upd
     "requestUrl": "https://github.com/sanjay235",
     "requestType": "GET",
     "callbackUrl": "https://www.github.com",
-    "retryCount": 235,
+    "retryCount": 23,
     "delayBetweenRetries": 2335,
     "param": {},
     "headers": {
@@ -55,14 +55,14 @@ It is an API based job scheduler(with cron-expressions) where we can create, upd
 // For updating a job get the entire request body using get-job details end point and make necessary changes
 // Json body =
 {
-    "jobID": 24,
+    "jobID": 235,
     "jobName": "Github profile fetch job",
     "description": "This job fetches the Sanjay's Github profile details.",
     "cronExpression": "0/45 * * * * ?",
     "requestUrl": "https://github.com/sanjay235",
     "requestType": "GET",
     "callbackUrl": "https://www.github.com",
-    "retryCount": 235,
+    "retryCount": 23,
     "delayBetweenRetries": 2335,
     "param": {},
     "headers": {
