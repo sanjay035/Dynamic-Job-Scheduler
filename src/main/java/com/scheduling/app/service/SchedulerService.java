@@ -21,9 +21,9 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Optional;
 
 @Service
-public class SchedulerService {
+public class APISchedulerService {
 
-    private static final Logger LOG = LoggerWrapper.getLogger(SchedulerService.class);
+    private static final Logger LOG = LoggerWrapper.getLogger(APISchedulerService.class);
 
     private final JobRepository jobRepository;
 
@@ -32,7 +32,7 @@ public class SchedulerService {
     private final RequestValidatorUtil requestValidatorUtil;
 
     @Autowired
-    public SchedulerService(JobScheduler jobScheduler, JobRepository jobRepository, RequestValidatorUtil requestValidatorUtil) {
+    public APISchedulerService(JobScheduler jobScheduler, JobRepository jobRepository, RequestValidatorUtil requestValidatorUtil) {
         this.jobScheduler = jobScheduler;
         this.jobRepository = jobRepository;
         this.requestValidatorUtil = requestValidatorUtil;
@@ -42,6 +42,8 @@ public class SchedulerService {
         try {
             this.requestValidatorUtil.validateJobRequest(jobRequest);
 
+            jobRequest.setIsActive(true);
+            
             JobModel jobModel = JobUtil.getJobModel(jobRequest);
             jobModel = this.jobRepository.save(jobModel);
             jobRequest.setJobID(jobModel.getJobID());
