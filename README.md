@@ -6,11 +6,11 @@ It is an API based job scheduler(with cron-expressions) where we can create, upd
 
 **References**:
 
-[1] http://www.quartz-scheduler.org/
+[1] https://www.javatpoint.com/spring-tutorial
 
-[2] https://www.baeldung.com/quartz
+[2] http://www.quartz-scheduler.org/
 
-[3] https://www.javatpoint.com/spring-tutorial
+[3] https://www.baeldung.com/quartz
 
 # Installation:
 - Clone this repo:
@@ -26,7 +26,7 @@ It is an API based job scheduler(with cron-expressions) where we can create, upd
 # REST APIs:
 * I have created a job called `APITriggerJob` for hitting an external REST API at regular intervals for demo purposes.
 * The request body for below APIs is specific to `APITriggerJob` that I have created.
-* You can customise and add new jobs as per your need in the `main/src/main/java/com/scheduling/quartzapp/job` folder.
+* You can customise and add new jobs as per your need in the `main/src/main/java/com/scheduling/app/job` folder.
 ```
 // Create job end point = localhost:8080/api/scheduler/insert-job
 // HTTP Method = POST
