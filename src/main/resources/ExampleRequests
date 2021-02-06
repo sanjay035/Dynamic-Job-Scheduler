@@ -1,0 +1,51 @@
+// Create job end point = localhost:8080/api/scheduler/insert-job
+// HTTP Method = POST
+// JSON body =
+{
+    "jobName": "Github profile fetch job",
+    "description": "This job fetches the sanjay's Github profile details.",
+    "cronExpression": "0/45 * * * * ?",
+    "requestUrl": "https://github.com/sanjay235",
+    "requestType": "GET",
+    "callbackUrl": "https://www.github.com",
+    "retryCount": 235,
+    "delayBetweenRetries": 2335,
+    "param": {},
+    "headers": {
+        "Content-Type": "application/json"
+    },
+    "body": {}
+}
+
+// Get job details endpoint = localhost:8080/api/scheduler/get-job/235
+// HTTP Method = GET
+
+// Update Job endpoint = localhost:8080/api/scheduler/update-job/
+// HTTP method = PUT
+// For updating a job get the entire request body using get-job details end point and make necessary changes
+// Json body =
+{
+    "jobID": 24,
+    "jobName": "Github profile fetch job",
+    "description": "This job fetches the sanjay's Github profile details.",
+    "cronExpression": "0/45 * * * * ?",
+    "requestUrl": "https://github.com/sanjay235",
+    "requestType": "GET",
+    "callbackUrl": "https://www.github.com",
+    "retryCount": 235,
+    "delayBetweenRetries": 2335,
+    "param": {},
+    "headers": {
+        "Content-Type": "application/json"
+    },
+    "body": {}
+}
+
+// Delete job end point = localhost:8080/api/scheduler/delete-job/235
+// HTTP Method = DELETE
+
+// Activate job end point = localhost:8080/api/scheduler/activate-job/235
+// HTTP Method = PUT
+
+// De-Activate job end point = localhost:8080/api/scheduler/deactivate-job/235
+// HTTP Method = PUT
