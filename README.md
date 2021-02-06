@@ -23,7 +23,7 @@ It is an API based job scheduler(with cron-expressions) where we can create, upd
 - Update the dependencies given in the `pom.xml` using Maven.
 - Run it as spring boot application in the IDE.
 
-# REST APIs:
+# API endpoints:
 * I have created a job called `APITriggerJob` for hitting an external REST API at regular intervals for demo purposes.
 * The request body for below APIs is specific to `APITriggerJob` that I have created.
 * You can customise and add new jobs as per your need in the `main/src/main/java/com/scheduling/app/job` folder.
