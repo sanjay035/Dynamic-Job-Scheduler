@@ -8,9 +8,11 @@ It is an API based job scheduler(with cron-expressions) where we can create, upd
 
 [1] https://www.javatpoint.com/spring-tutorial
 
-[2] http://www.quartz-scheduler.org/
+[2] [Liliumm Code YouTube](https://www.youtube.com/channel/UCHu8fdv3oIxYOVr9e92AxYQ)
 
-[3] https://www.baeldung.com/quartz
+[3] http://www.quartz-scheduler.org/
+
+[4] https://www.baeldung.com/quartz
 
 # Installation:
 - Clone this repo:
