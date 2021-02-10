@@ -1,5 +1,5 @@
 # Dynamic-Job-Scheduler
-It is an API based job scheduler(with cron-expressions) where we can create, update, delete, activate and deactivate jobs at anytime with REST calls.
+It is an API based job scheduler(uses cron-expressions, we can customize by giving time in millis) where we can create, update, delete, activate and deactivate jobs at anytime with REST calls.
 
 * The jobs are persisted in the database MySQL when create and update request is made.
 * The sheduler automatically picks the jobs and resumes them, after restarting when the application goes down.
