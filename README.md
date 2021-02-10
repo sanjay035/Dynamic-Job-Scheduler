@@ -1,5 +1,5 @@
 # Dynamic-Job-Scheduler
-It is an API based job scheduler(uses cron-expressions, we can customize by giving time in millis) where we can create, update, delete, activate and deactivate jobs at anytime with REST calls.
+It is an API based job scheduler(uses cron-expressions, also we can customize triggers by giving time in millis) where we can create, update, delete, activate and deactivate jobs at anytime with REST calls.
 
 * The jobs are persisted in the database MySQL when create and update request is made.
 * The sheduler automatically picks the jobs and resumes them, after restarting when the application goes down.
@@ -8,7 +8,7 @@ It is an API based job scheduler(uses cron-expressions, we can customize by givi
 
 [1] https://www.javatpoint.com/spring-tutorial
 
-[2] [Liliumm Code YouTube](https://www.youtube.com/channel/UCHu8fdv3oIxYOVr9e92AxYQ)
+[2] [Lilium Code YouTube](https://www.youtube.com/channel/UCHu8fdv3oIxYOVr9e92AxYQ)
 
 [3] http://www.quartz-scheduler.org/
 
