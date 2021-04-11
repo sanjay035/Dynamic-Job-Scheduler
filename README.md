@@ -30,10 +30,9 @@ It is an API based job scheduler(uses cron-expressions, also we can customize tr
 * The request body for below APIs is specific to `APITriggerJob` that I have created.
 * You can customise and add new jobs as per your need in the `main/src/main/java/com/scheduling/app/job` folder.
 ```
-// Create job end point = localhost:8080/api/scheduler/insert-job
-// HTTP Method = POST
-// JSON body =
-{
+Create job end point = localhost:8080/api/scheduler/insert-job
+HTTP method = POST
+JSON body = {
     "jobName": "Github profile fetch job",
     "description": "This job fetches the Sanjay's Github profile details.",
     "cronExpression": "0/45 * * * * ?",
@@ -48,15 +47,16 @@ It is an API based job scheduler(uses cron-expressions, also we can customize tr
     },
     "body": {}
 }
-
-// Get job details endpoint = localhost:8080/api/scheduler/get-job/235
-// HTTP Method = GET
-
-// Update Job endpoint = localhost:8080/api/scheduler/update-job/
-// HTTP method = PUT
-// For updating a job get the entire request body using get-job details end point and make necessary changes
-// Json body =
-{
+```
+```
+Get job details endpoint = localhost:8080/api/scheduler/get-job/235
+HTTP method = GET
+```
+```
+Update Job endpoint = localhost:8080/api/scheduler/update-job/
+HTTP method = PUT
+For updating a job get the entire request body using get-job details end point and make necessary changes
+Json body = {
     "jobID": 235,
     "jobName": "Github profile fetch job",
     "description": "This job fetches the Sanjay's Github profile details.",
@@ -72,15 +72,18 @@ It is an API based job scheduler(uses cron-expressions, also we can customize tr
     },
     "body": {}
 }
-
-// Delete job end point = localhost:8080/api/scheduler/delete-job/235
-// HTTP Method = DELETE
-
-// Activate job end point = localhost:8080/api/scheduler/activate-job/235
-// HTTP Method = PUT
-
-// De-Activate job end point = localhost:8080/api/scheduler/deactivate-job/235
-// HTTP Method = PUT
+```
+```
+Delete job end point = localhost:8080/api/scheduler/delete-job/235
+HTTP Method = DELETE
+```
+```
+Activate job end point = localhost:8080/api/scheduler/activate-job/235
+HTTP Method = PUT
+```
+```
+De-Activate job end point = localhost:8080/api/scheduler/deactivate-job/235
+HTTP Method = PUT
 ```
 
 # Contribute:
